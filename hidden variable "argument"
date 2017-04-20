@@ -1,0 +1,22 @@
+"argument" is the default/hidden argument available for every function! So, when ever you write a function assume that we have a default "argument" 
+
+var addMethod = function(a, b) {
+  console.log(arguments);//this is an implicit agrument
+  return a + b;
+  
+}
+
+console.log(addMethod(30,20, 2, 3, 4, 5));//generally, we than that only 2 arguments will be passed but if we in console we can see the extra arguments listed and captured.But the sum of a & b would be still 50 in this case.
+
+//NOte: there is a second argument available and it is ??? "this"
+
+Example2: var add = function() { //here we are not using any parameters as we are using arguments
+var i, sum = 0;
+for(i=0; i<arguments.length; i++)
+{
+  sum += arguments[i];
+}
+return sum;
+};
+
+console.log(add(10,20,30,40,50));
