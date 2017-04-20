@@ -1,0 +1,19 @@
+var me = {
+  "name": "rama",
+  "lastName": "sita",
+   "getFullName": function() {
+     return this.name + " " + this.lastName;
+   },
+   "address": {
+     "street": "SO 38th Street",
+     "city": "St Joseph",
+     "state": "MO"
+   },
+   "isFromState": function(enterState) {
+     var sol = this.address.state;
+     return(sol===enterState);
+     
+   }
+};
+console.log(me.isFromState("MO"));
+
