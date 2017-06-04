@@ -1,0 +1,16 @@
+function GraduateStudents(firstName, lastname, major, school, hobbies) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.major = major;
+    this.school = school;
+    this.hobbies = hobbies;
+    
+    this.showIdCard = function() {
+        console.log("this is a " + this.firstName);
+    }
+    this.myHobbies = function() {
+        this.hobbies.forEach(function(listOfHobbies) {
+            console.log("my favourite hobbies " + listOfHobbies);
+        });
+    }
+}
