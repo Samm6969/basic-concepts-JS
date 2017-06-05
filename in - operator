@@ -1,0 +1,6 @@
+var school = {
+   schoolName: "MIT"
+   }
+  
+console.log("schoolName" in school);//true
+//Prints true because schoolName is an owm propetry of school object.
